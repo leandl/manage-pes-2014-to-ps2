@@ -7,7 +7,7 @@ const defaultMigrationOptions: Omit<RunnerOption, "dbClient"> = {
   dir: resolve("infra", "migrations"),
   direction: "up",
   migrationsTable: "pgmigrations",
-  verbose: true,
+  verbose: false,
 };
 
 async function listPendingMigrations() {
